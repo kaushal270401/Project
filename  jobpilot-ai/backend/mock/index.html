@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>JobPilot Mock Jobs</title>
+</head>
+<body>
+  <h1>Available Jobs</h1>
+
+  <div class="job-card">
+    <h2 class="job-title">Senior React Developer</h2>
+    <p class="company">ABC Technologies</p>
+    <p class="location">Mumbai</p>
+    <p class="salary">12-18 LPA</p>
+    <a href="/jobs/101">View Job</a>
+  </div>
+
+  <div class="job-card">
+    <h2 class="job-title">Node.js Developer</h2>
+    <p class="company">Tech Solutions</p>
+    <p class="location">Pune</p>
+    <p class="salary">10-15 LPA</p>
+    <a href="/jobs/102">View Job</a>
+  </div>
+
+  <div class="job-card">
+    <h2 class="job-title">Frontend Developer</h2>
+    <p class="company">Digital Labs</p>
+    <p class="location">Bangalore</p>
+    <a href="/jobs/103">View Job</a>
+  </div>
+
+  <div id="dynamic-jobs"></div>
+
+  <script>
+    setTimeout(() => {
+      document.querySelector("#dynamic-jobs").innerHTML = `
+        <div class="job-card">
+          <h2 class="job-title">Full Stack Developer</h2>
+          <p class="company">Startup India</p>
+          <p class="location">Remote</p>
+          <p class="salary">15-20 LPA</p>
+          <a href="/jobs/104">View Job</a>
+        </div>
+      `;
+    }, 2000);
+  </script>
+</body>
+</html>
